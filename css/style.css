@@ -164,6 +164,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (max-width: 56.25em) {
+  .side-nav {
+    padding-top: 0;
+  }
+}
 .side-nav__list {
   color: var(--color-Grey-light-1);
   padding: 0;
@@ -176,6 +181,7 @@ body {
     flex: 1;
     justify-content: space-around;
     margin: none;
+    padding-top: 1rem;
   }
 }
 .side-nav__item {
@@ -213,6 +219,17 @@ body {
   align-items: center;
   position: relative;
   z-index: 10;
+}
+@media screen and (max-width: 75em) {
+  .side-nav__link:link, .side-nav__link:visited {
+    padding: 1.5rem 2rem;
+  }
+}
+@media screen and (max-width: 56.25em) {
+  .side-nav__link:link, .side-nav__link:visited {
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+  }
 }
 .side-nav__icon {
   width: 1.75rem;
@@ -355,6 +372,11 @@ body {
 .detail {
   border-bottom: var(--border);
 }
+@media screen and (max-width: 37.5em) {
+  .detail {
+    flex-direction: column;
+  }
+}
 
 .description {
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
@@ -364,6 +386,12 @@ body {
 @media screen and (max-width: 56.25em) {
   .description {
     margin-right: 3rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .description {
+    margin-right: 0;
+    margin-bottom: 5rem;
   }
 }
 
@@ -390,6 +418,11 @@ body {
   flex: 0 0 50%;
   margin-bottom: 2rem;
   padding-left: 2rem;
+}
+@media screen and (max-width: 56.25em) {
+  .list__item {
+    padding-left: 0.8rem;
+  }
 }
 .list__item::before {
   display: inline-block;
@@ -431,6 +464,11 @@ body {
   margin-bottom: 6rem;
   position: relative;
 }
+@media screen and (max-width: 56.25em) {
+  .review {
+    padding: 1.5rem;
+  }
+}
 .review__user {
   margin-top: 3.5rem;
   display: flex;
@@ -446,6 +484,11 @@ body {
   width: 5rem;
   border-radius: 50%;
   margin-right: 2rem;
+}
+@media screen and (max-width: 56.25em) {
+  .review__photo {
+    margin-right: 1rem;
+  }
 }
 .review__user-name {
   font-size: 1.2rem;
@@ -469,6 +512,18 @@ body {
   line-height: 1;
   color: var(--color-Grey-light-3);
   z-index: 1;
+}
+@media screen and (max-width: 56.25em) {
+  .review::before {
+    top: -4rem;
+    font-size: 16rem;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .review::before {
+    top: -3rem;
+    font-size: 14rem;
+  }
 }
 
 .button-inline {
@@ -565,9 +620,9 @@ body {
   background-color: var(--color-Grey-dark-1);
   flex: 0 0 18%;
 }
-@media screen and (max-width: 56.25em) {
+@media screen and (max-width: 75em) {
   .side-nav {
-    flex: 1;
+    flex: 0 0 18%;
   }
 }
 
