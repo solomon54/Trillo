@@ -462,6 +462,9 @@ body {
   cursor: pointer;
   overflow: hidden;
 }
+.cta > * {
+  transition: all 2s;
+}
 .cta__visible {
   display: inline-block;
   height: 100%;
@@ -481,6 +484,11 @@ body {
 .cta:hover .cta__hidden {
   top: 0;
   left: 0;
+  background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
+  transform: scale(1.05);
+}
+.cta:active .cta__hidden {
+  transform: scale(1);
 }
 .cta:hover .cta__visible {
   transform: translatey(-100%);
@@ -492,6 +500,11 @@ body {
   margin: 8rem auto;
   background-color: var(--color-Grey-light-2);
   box-shadow: var(--box-shadow-dark);
+}
+@media screen and (max-width: 75em) {
+  .container {
+    margin: auto;
+  }
 }
 
 .header {
@@ -506,6 +519,11 @@ body {
 
 .content {
   display: flex;
+}
+@media screen and (max-width: 56.25em) {
+  .content {
+    flex-direction: column;
+  }
 }
 
 .side-nav {

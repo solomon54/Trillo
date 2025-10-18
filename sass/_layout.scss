@@ -5,6 +5,10 @@
   background-color: var(--color-Grey-light-2);
 
   box-shadow: var(--box-shadow-dark);
+
+  @media screen and (max-width: $brk-12) {
+    margin: auto;
+  }
 }
 
 .header {
@@ -19,6 +23,9 @@
 }
 .content {
   display: flex;
+  @media screen and (max-width: $brk-9) {
+    flex-direction: column;
+  }
 }
 .side-nav {
   background-color: var(--color-Grey-dark-1);

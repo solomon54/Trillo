@@ -39,6 +39,11 @@ Grey dark 3: #999
   --border: 0.1rem solid var(--color-Grey-light-2);
 }
 
+// Breake Points
+$brk-12: 75em; //1200px
+$brk-9: 56.25em; //900px
+$brk-6: 37.5em; //600px
+
 * {
   margin: 0;
   padding: 0;

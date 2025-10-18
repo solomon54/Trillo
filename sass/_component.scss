@@ -455,9 +455,10 @@
     color: var(--color-white);
     cursor: pointer;
     overflow: hidden;
-    // animation: pulset 1s infinite;
   }
-
+  & > * {
+    transition: all 2s;
+  }
   &__visible {
     display: inline-block;
     height: 100%;
@@ -478,6 +479,15 @@
   &:hover &__hidden {
     top: 0;
     left: 0;
+    background-image: linear-gradient(
+      to left,
+      var(--color-primary-light),
+      var(--color-primary-dark)
+    );
+    transform: scale(1.05);
+  }
+  &:active &__hidden {
+    transform: scale(1);
   }
 
   &:hover &__visible {
