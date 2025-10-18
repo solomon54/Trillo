@@ -290,6 +290,7 @@
 .description {
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
   flex: 0 0 60%;
+  margin-right: 2rem;
 }
 .Review {
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
@@ -356,5 +357,36 @@
 
   &__friends:not(:last-child) {
     margin-right: -1.5rem;
+  }
+}
+
+//////////////////////////////////////////////////////////////////////////////
+///   Review
+.review {
+  padding: 3rem;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow-dark);
+
+  &__user {
+    margin-bottom: 3.5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  &__text {
+  }
+  &__photo {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+  }
+
+  &__user-box {
+  }
+  &__user-name {
+    font-size: 1.2rem;
+  }
+  &__user-date {
+  }
+  &__user-rate {
   }
 }
