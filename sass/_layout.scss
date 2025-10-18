@@ -30,6 +30,10 @@
 .side-nav {
   background-color: var(--color-Grey-dark-1);
   flex: 0 0 18%;
+
+  @media screen and (max-width: $brk-9) {
+    flex: 1;
+  }
 }
 .main {
   background-color: var(--color-white);
@@ -40,4 +44,8 @@
   display: flex;
   padding: 3.5rem;
   font-size: 1.4rem;
+
+  @media screen and (max-width: $brk-9) {
+    padding: 2rem;
+  }
 }

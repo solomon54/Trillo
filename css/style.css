@@ -47,6 +47,11 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+@media screen and (max-width: 56.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 
 body {
   background-image: linear-gradient(to bottom right, var(--color-primary-light), var(--color-primary-dark));
@@ -165,6 +170,14 @@ body {
   margin: 0;
   list-style: none;
 }
+@media screen and (max-width: 56.25em) {
+  .side-nav__list {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    margin: none;
+  }
+}
 .side-nav__item {
   position: relative;
 }
@@ -214,6 +227,11 @@ body {
   text-align: center;
   padding: 2.5rem;
 }
+@media screen and (max-width: 56.25em) {
+  .legal {
+    display: none;
+  }
+}
 
 .gallery {
   display: flex;
@@ -234,6 +252,12 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   padding: 1.5rem 3rem;
+}
+@media screen and (max-width: 56.25em) {
+  .overview__heading {
+    margin-right: 0;
+    padding: 1rem 2rem;
+  }
 }
 .overview__stars {
   margin-right: auto;
@@ -261,6 +285,12 @@ body {
   align-self: stretch;
   padding: 1.5rem;
   text-align: center;
+}
+@media screen and (max-width: 56.25em) {
+  .overview__rating {
+    padding: 1rem;
+    margin-left: 1.5rem;
+  }
 }
 .overview__rating--avarage {
   font-size: 2.25rem;
@@ -330,6 +360,11 @@ body {
   box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
   flex: 0 0 60%;
   margin-right: 2rem;
+}
+@media screen and (max-width: 56.25em) {
+  .description {
+    margin-right: 3rem;
+  }
 }
 
 .Review {
@@ -530,6 +565,11 @@ body {
   background-color: var(--color-Grey-dark-1);
   flex: 0 0 18%;
 }
+@media screen and (max-width: 56.25em) {
+  .side-nav {
+    flex: 1;
+  }
+}
 
 .main {
   background-color: var(--color-white);
@@ -540,6 +580,11 @@ body {
   display: flex;
   padding: 3.5rem;
   font-size: 1.4rem;
+}
+@media screen and (max-width: 56.25em) {
+  .detail {
+    padding: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
