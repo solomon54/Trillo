@@ -20,6 +20,12 @@
   background-color: var(--color-Grey-light-1);
 
   border-bottom: 0.1rem solid var(--color-Grey-light-4);
+
+  @media screen and (max-width: $brk-5) {
+    flex: 1;
+    flex-wrap: wrap;
+    padding-bottom: 7rem;
+  }
 }
 .content {
   display: flex;
