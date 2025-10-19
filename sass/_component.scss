@@ -346,21 +346,21 @@
     transform: scale(1);
     box-shadow: none;
   }
-  25% {
-    background-color: green;
-    color: var(--color-white);
-  }
+  // 25% {
+  //   background-color: green;
+  //   color: var(--color-white);
+  // }
 
   50% {
     transform: scale(1.1);
     box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.3);
-    background-color: yellow;
+    background-color: var(--color-Grey-light-4);
     color: black;
   }
-  75% {
-    background-color: orangered;
-    color: var(--color-white);
-  }
+  // 75% {
+  //   background-color: orangered;
+  //   color: var(--color-white);
+  // }
   100% {
     transform: scale(1);
     box-shadow: none;
